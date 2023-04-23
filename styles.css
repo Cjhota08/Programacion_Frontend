@@ -1,50 +1,141 @@
 body{
     background-color: #BDCDD6;
-    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#circulo {
+    background-image: url(img/CherokeeSRT8.jpg);
+    border:2px solid #6096B4;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 .grid{
     display:grid; 
     grid-template-columns: 35% 65%;
-    border: 2px solid #6096B4;
-    margin:2px;
-    
-    
+    margin:2px;   
+         
 }
+
+
 .grid2{
     display: grid;
     grid-template-columns:25% auto;
     text-align: left;
+    margin:2px;
+    margin-bottom: 15px;
     
-    
-}
+    }
 
 .grid3{
     display: grid;
     grid-template-columns:auto auto;
     text-align: left;
+    margin:2px;
     
     
 }
 
 .grid_footer{
     display: grid;
-    grid-template-columns:10% auto;
+    grid-template-columns:15% auto;
     text-align: left;
     background-color: #EEE9DA;
     border: 2px solid #6096B4;
-    margin:2px;
+    padding: 5px;
+    border-radius: 10px;
 
 }
 section{
     
     background-color: #EEE9DA;
-    border: 2px solid #6096B4;
     margin:2px;
+    border-radius:10px;
+    border: 2px solid #6096B4;
+    padding:5px;
 }
 
 h2{
     background-color: #93BFCF;
     border: 2px solid #6096B4;
+    padding:5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.habilidades:not(:last-child){
+    margin-bottom: 10px;
+
 }
 
+.detalles{
+  display:flex;  
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.barra{
+    position: relative;
+    border:1px solid #6096b4;
+    border-radius: 10px;
+}    
+
+.barra div {
+    position:relative;
+    width:0;
+    height: 10px ;
+    border-radius: 5px;
+    background-color:#93BFCF ;
+
+}
+
+#equipo-barra{
+    animation: equipo-barra 5s forwards;
+}
+@keyframes equipo-barra{
+ 100%{
+    width:95% ;
+ }   
+}
+
+#hard-barra{
+    animation: hard-barra 5s forwards;
+}
+@keyframes hard-barra{
+ 100%{
+    width:80% ;
+ }   
+}
+
+#so-barra{
+    animation: so-barra 5s forwards;
+}
+@keyframes so-barra{
+ 100%{
+    width:70% ;
+ }   
+}
+
+#html-css-barra{
+    animation: html-css-barra 5s forwards;
+}
+@keyframes html-css-barra{
+ 100%{
+    width:25% ;
+ }   
+}
+
+
+
+li{
+  margin-bottom: 10px; 
+  font-size: 14px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+div{
+    font-size: 14px;
+}
